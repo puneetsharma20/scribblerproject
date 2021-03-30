@@ -8,57 +8,100 @@
     <link href='..\css\postslist.css' rel='stylesheet' type='text/css'>
     <link href='..\css\header.css' rel='stylesheet' type='text/css'>
 </head>
-<body style="background-color:#FAA41A">
-    <div class="header">
-        <div class="buttons-top">
-            <button type="button" data-toggle="modal" data-target="#ModalSignin" class="signingupinbtns" id="signin">
-                Sign In
-            </button>
-            <button type="button" data-toggle="modal" data-target="#ModalSignup" class="signingupinbtns" id="signup">
-                Sign Up
-            </button>
-            <a id="Title" class="logo">ScriBBler</a>
-            <p class="subtitle">Explore, Imagine, Create</p>
-        </div>
-        <div class="modal fade" id="ModalSignin" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h1 class="modal-title" id="ModalLabel" style="text-align: center;">Welcome Back!</h1>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="Username">Username</label>
-                                <input type="text" class="form-control" id="Username" placeholder="Enter your username" style="background-color :whitesmoke ;" required>
+<body style="background-color:#f0980c">
+                    <div class="header">
+
+
+                        <div class="buttons-top">
+                            <button type="button" data-toggle="modal" data-target="#ModalSignin" class="signingbtns" id="signin">
+                                Sign In
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#ModalSignup" class="signingbtns" id="signup">
+                                Sign Up
+                            </button>
+                            <a id="title" class="logo">ScriBBler</a>
+                            <p class="sub-title">Explore, Imagine, Create</p>
+                        </div>
+                        <div class="modal fade" id="ModalSignin" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h1 class="modal-title" id="ModalLabel" style="text-align: center;">Welcome Back!</h1>
+                
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="Username">Username</label>
+                                                <input type="text" class="form-control" id="Username" placeholder="Enter your username" style="background-color :whitesmoke ;" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Password1">Password</label>
+                                                <input type="password" class="form-control" id="Password1" placeholder="Enter your password" style="background-color :whitesmoke ;" required>
+                                            </div>
+                                            <div class="modal-signin-container">
+                                                <button type="submit" class="btn btn-success btn-block">Sign In</button>
+                                            </div>
+                                            <div class="modal-footer" style="text-align: center;">
+                                                Not a member?<a data-target="#ModalSignup" data-toggle="modal" href="">Sign Up</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="Password1">Password</label>
-                                <input type="password" class="form-control" id="Password1" placeholder="Enter your password" style="background-color :whitesmoke ;" required>
+                        </div>
+                        <div class="modal fade" id="ModalSignup" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span>&times;</span>
+                                        </button>
+                                        <h1 class="modal-title" id="ModalLabel" style="color:black ;text-align: center;">Get Started</h1>
+                                    </div>
+                                    <div class="modal-body" style="height: 410px;">
+                                        <form>
+                
+                                            <div class="form-group">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" id="name" placeholder="Enter your name" style="background-color : rgb(245, 245, 245) ;" required>
+                
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Username1">Username</label>
+                                                <input type="text" class="form-control" id="Username1" placeholder="Enter your username" style="background-color :rgb(245, 245, 245) ;" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Password1">Password</label>
+                                                <input type="password" class="form-control" id="Password1" placeholder="Enter your password" style="background-color :rgb(245, 245, 245) ;" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Password2">Confirm Password</label>
+                                                <input type="password" class="form-control" id="Password2" placeholder="Re-enter your Password" style="background-color :rgb(245, 245, 245) ;" required>
+                                            </div>
+                
+                                            <div class="modal-signin-container">
+                                                <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                                            </div>
+                
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-signin-container">
-                                <button type="submit" class="btn btn-success btn-block">Sign In</button>
-                            </div>
-                            <div class="modal-footer" style="text-align: center;">
-                                Not a member?<a data-target="#ModalSignup" data-dismiss="modal" data-toggle="modal" href="">Sign Up</a>
-                            </div>
-                        </form>
-                    </div>
-                    </div>
-                    </div>
+                        </div>
                     </div>
                     <div class="container">
-                        <div class="postcard" id="post 1">
+                        <div class="postcard" id="post1">
                             <div class="sidesquare">
-                                <span class="sidesquarecontent" id="writer1">Srishti Gupta</span>
+                                <span class="sidesquarecontent" id="author1">Srishti Gupta</span>
                             </div>
                             <div class="postbody">
                                 <div>
                                     <div class="postbodyheading">
-                                        <span class="postbodyheadingcontent" id="h1">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</span>
+                                        <span class="postbodyheadingcontent" id="heading1">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</span>
                                         <span class="trash-button" data-toggle="modal" data-target="#YesNo">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
@@ -67,10 +110,9 @@
                                         </span>
                                     </div>
                                 </div>
-                                <span class="posttext" id="c1">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</span>
-                <span class="ellipsis" onclick=open(writer1,h1,c1)>
-                    <span class="ellipsis" onclick="open1(writer1,h1,c1)">
-                        <i style="font-size: 25px; ">...</i>
+                                <span class="posttext" id="content1">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</span>
+                    <span class="ellipsis" onclick="open1(author1,heading1,content1)">
+                        <i style="font-size: 22px; ">...</i>
                     </span>
                 </div>
             </div>
@@ -79,12 +121,12 @@
             <!-- post 2 starts -->
             <div class="postcard" id="post2">
                 <div class="sidesquare">
-                    <span class="sidesquarecontent" id="writer2">Colby Fayock</span>
+                    <span class="sidesquarecontent" id="author2">Colby Fayock</span>
                 </div>
                 <div class="postbody">
                     <div>
                         <div class="postbodyheading">
-                            <span class="postbodyheadingcontent" id="h2">What is linting and how can it save you time?</span>
+                            <span class="postbodyheadingcontent" id="heading2">What is linting and how can it save you time?</span>
                             <span class="trash-button" data-toggle="modal" data-target="#YesNo">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16" height="16 " fill="currentColor " class="bi bi-trash " viewBox="0 0 16 16 ">
                                     <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z "/>
@@ -94,9 +136,9 @@
                             </span>
                         </div>
                     </div>
-                    <span class="posttext" id="c2">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</span>
-                    <span class="ellipsis" onclick="open1(writer2,h2,c2)">
-                        <i style="font-size:25px">...</i>
+                    <span class="posttext" id="content2">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</span>
+                    <span class="ellipsis" onclick="open1(author2,heading2,content2)">
+                        <i style="font-size:22px">...</i>
                     </span>
                 </div>
             </div>
@@ -105,12 +147,12 @@
             <!-- post 3 starts -->
             <div class="postcard " id="post3">
                 <div class="sidesquare ">
-                    <span class="sidesquarecontent " id="writer3">Yazeed Bzadough</span>
+                    <span class="sidesquarecontent " id="author3">Yazeed Bzadough</span>
                 </div>
                 <div class="postbody ">
                     <div>
                         <div class="postbodyheading">
-                            <span class="postbodyheadingcontent" id="h3">How to Get More Views on Your Tech Blog</span>
+                            <span class="postbodyheadingcontent" id="heading3">How to Get More Views on Your Tech Blog</span>
                             <span class="trash-button" data-toggle="modal" data-target="#YesNo">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-trash " viewBox="0 0 16 16 ">
                                     <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z "/>
@@ -120,9 +162,9 @@
                             </span>
                         </div>
                     </div>
-                    <span class="posttext" id="c3">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</span>
-                    <span class="ellipsis" onclick="open1(writer3,h3,c3)">
-                        <i style="font-size:25px">...</i>
+                    <span class="posttext" id="content3">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</span>
+                    <span class="ellipsis" onclick="open1(author3,heading3,content3)">
+                        <i style="font-size:22px">...</i>
                     </span>
                 </div>
             </div>
@@ -131,13 +173,13 @@
             <!-- post 4 starts -->
             <div class="postcard" id="post4">
                 <div class="sidesquare ">
-                    <span class="sidesquarecontent" id="writer4">Cedd Burge</span>
+                    <span class="sidesquarecontent" id="author4">Cedd Burge</span>
                 </div>
     
                 <div class="postbody">
                     <div>
                         <div class="postbodyheading">
-                            <span class="postbodyheadingcontent" id="h4">How to write easily describable code</span>
+                            <span class="postbodyheadingcontent" id="heading4">How to write easily describable code</span>
                             <span class="trash-button " data-toggle="modal" data-target="#YesNo">
                                 <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-trash " viewBox="0 0 16 16 ">
                                     <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z "/>
@@ -147,10 +189,10 @@
                             </span>
                         </div>
                     </div>
-                    <span class="posttext" id="c4">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                    <span class="posttext" id="content4">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                         leads to confusion when discussing the code.</span>
-                        <span class="ellipsis" onclick="open1(writer4,h4,c4)">
-                            <i style="font-size:24px">...</i>
+                        <span class="ellipsis" onclick="open1(author4,heading4,content4)">
+                            <i style="font-size:22px">...</i>
                         </span>
                     </div>
                 </div>
@@ -159,12 +201,12 @@
                 <!-- post 5 starts -->
                 <div class="postcard" id="post5">
                     <div class="sidesquare">
-                        <span class="sidesquarecontent" id="writer5">Srishti Gupta</span>
+                        <span class="sidesquarecontent" id="author5">Srishti Gupta</span>
                     </div>
                     <div class="postbody ">
                         <div>
                             <div class="postbodyheading">
-                                <span class="postbodyheadingcontent" id="h5">Everything you should know about ‘module’ & ‘require’ in Node.js</span>
+                                <span class="postbodyheadingcontent" id="heading5">Everything you should know about ‘module’ & ‘require’ in Node.js</span>
                                 <span class="trash-button" data-toggle="modal" data-target="#YesNo">
                                     <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-trash " viewBox="0 0 16 16 ">
                                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z "/>
@@ -174,10 +216,10 @@
                                 </span>
                             </div>
                         </div>
-                        <span class="posttext" id="c5">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                        <span class="posttext" id="content5">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                             named xyz.</span>
-                            <span class="ellipsis" onclick="open1(writer5,h5,c5)">
-                                <i style="font-size:24px">...</i>
+                            <span class="ellipsis" onclick="open1(author5,heading5,content5)">
+                                <i style="font-size:22px">...</i>
                             </span>
                         </div>
                     </div>
@@ -192,8 +234,8 @@
                                 <br>
                                 <p id="confirmyesno" class="modal-title" style="font-size: 16px; font:bold">
                                     Are you sure you want to delete this post?</p><br>
-                                <button id="btnYes" class="btn btn-success">Yes</button>
-                                <button id="btnNo" class="btn btn-danger" data-dismiss="modal">No</button>
+                                <button id="btnYes" class="btn btn-danger">Yes</button>
+                                <button id="btnNo" class="btn btn-success" data-dismiss="modal">No</button>
                             </div>
                         </div>
                     </div>

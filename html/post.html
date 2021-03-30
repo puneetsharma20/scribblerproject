@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href='C:\Users\DELL\Desktop\scribbler project\css\header.css' rel='stylesheet' type='text/css'>
-    <link href='C:\Users\DELL\Desktop\scribbler project\css\post.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\post.css' rel='stylesheet' type='text/css'>
 </head>
 
-<body style="background: white;">
+<body>
     <div class="header">
 
 
         <div class="buttons-top">
-            <button type="button" data-toggle="modal" data-target="#ModalSignin" class="signingupinbtns" id="signin">
+            <button type="button" data-toggle="modal" data-target="#ModalSignin" class="signingbtns" id="signin">
                 Sign In
             </button>
-            <button type="button" data-toggle="modal" data-target="#ModalSignup" class="signingupinbtns" id="signup">
+            <button type="button" data-toggle="modal" data-target="#ModalSignup" class="signingbtns" id="signup">
                 Sign Up
             </button>
-            <a id="Title" class="logo">ScriBBler</a>
-            <p class="subtitle">Explore, Imagine, Create</p>
+            <a id="title" class="logo">ScriBBler</a>
+            <p class="sub-title">Explore, Imagine, Create</p>
         </div>
         <div class="modal fade" id="ModalSignin" role="dialog">
             <div class="modal-dialog" role="document">
@@ -66,25 +66,25 @@
                         </button>
                         <h1 class="modal-title" id="ModalLabel" style="color:black ;text-align: center;">Get Started</h1>
                     </div>
-                    <div class="modal-body" style="height: 400px;">
+                    <div class="modal-body" style="height: 410px;">
                         <form>
 
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name" style="background-color : whitesmoke ;" required>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" style="background-color : rgb(245, 245, 245) ;" required>
 
                             </div>
                             <div class="form-group">
                                 <label for="Username1">Username</label>
-                                <input type="text" class="form-control" id="Username1" placeholder="Enter your username" style="background-color :whitesmoke ;" required>
+                                <input type="text" class="form-control" id="Username1" placeholder="Enter your username" style="background-color :rgb(245, 245, 245) ;" required>
                             </div>
                             <div class="form-group">
                                 <label for="Password1">Password</label>
-                                <input type="password" class="form-control" id="Password1" placeholder="Enter your password" style="background-color :whitesmoke ;" required>
+                                <input type="password" class="form-control" id="Password1" placeholder="Enter your password" style="background-color :rgb(245, 245, 245) ;" required>
                             </div>
                             <div class="form-group">
                                 <label for="Password2">Confirm Password</label>
-                                <input type="password" class="form-control" id="Password2" placeholder="Re-enter your Password" style="background-color :whitesmoke ;" required>
+                                <input type="password" class="form-control" id="Password2" placeholder="Re-enter your Password" style="background-color :rgb(245, 245, 245) ;" required>
                             </div>
 
                             <div class="modal-signin-container">
@@ -119,7 +119,7 @@
             <div class="comment"></div>
         </div>
     </div>
-    <script src="C:\Users\DELL\Desktop\scribbler project\javascript\post.js"></script>
+    <script src="..\javascript\post.js"></script>
 
 </body>
 </html>

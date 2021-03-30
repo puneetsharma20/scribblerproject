@@ -1,23 +1,22 @@
-#Title{
+#title{
     font-family: "Times New Roman", Times, serif;
-    color: rgb(17, 47, 180);
+    color: rgb(7, 33, 161);
     font-size: 45px;
     margin: auto;
     margin: 10px 10px 0px 10px;
 }
-.subtitle{
+.sub-title{
     font-family: 'Montez', cursive;
     margin-left: 10px;
     color: black;
 }
 #signin,#signup{
-    width: 120px;
+    width: 110px;
     padding: 10px;
     cursor: pointer;
-    font-size: 80%;
     margin: auto;
-    background: rgb(17, 47, 180);
-    color: whitesmoke;
+    background: rgb(7, 33, 161);
+    color: rgb(255, 255, 255);
     float: right;
     margin: 10px 10px 0px 0px;
     font-weight: 500;

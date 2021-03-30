@@ -1,0 +1,33 @@
+#comments {
+    margin: 10px;
+    width: 780px;
+    height: 70px;
+    background-color: white;
+}
+
+.writer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.writername {
+    font-family: 'Freestyle Script', cursive;
+    font-size: 30px;
+    color: black;
+    font-stretch: normal;
+}
+
+.heading-content {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#editbtn {
+    margin-left: 900px;
+    float: right;
+    height: 40px;
+    width: 100px;
+    padding: 5
+}
